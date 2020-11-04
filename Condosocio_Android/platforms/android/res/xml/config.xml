@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="br.com.condosociostore" version="6.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.contacts.ContactManager" />
+    </feature>
+    <feature name="CropPlugin">
+        <param name="android-package" value="com.jeduan.crop.CropPlugin" />
+    </feature>
+    <feature name="DatePickerPlugin">
+        <param name="android-package" value="com.plugin.datepicker.DatePickerPlugin" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="FileTransfer">
+        <param name="android-package" value="org.apache.cordova.filetransfer.FileTransfer" />
+    </feature>
+    <feature name="InAppBrowser">
+        <param name="android-package" value="org.apache.cordova.inappbrowser.InAppBrowser" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <feature name="OneSignalPush">
+        <param name="android-package" value="com.plugin.gcm.OneSignalPush" />
+    </feature>
+    <name>CondoSócio</name>
+    <description>Aplicativo colaborativo para integração de moradores, síndicos e administradores de condomínios.</description>
+    <author>ALVO COMUNICAÇÃO</author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-navigation href="https://www.youtube.com/*" />
+    <allow-navigation href="https://maps.google.com/*" />
+    <allow-navigation href="https://www.google.com.br/*" />
+    <allow-navigation href="*/maps.google.com/*" />
+    <allow-navigation href="https:\/\/servcon.superlogica.net/*" />
+    <access origin="*" />
+    <allow-intent href="market:*" />
+    <splash density="ldpi" height="426" orientation="portrait" src="package-assets/320x426.png" width="320" />
+    <splash density="mdpi" height="470" orientation="portrait" src="package-assets/320x470.png" width="320" />
+    <splash density="hdpi" height="640" orientation="portrait" src="package-assets/480x640.png" width="480" />
+    <splash density="xhdpi" height="960" orientation="portrait" src="package-assets/720x960.png" width="720" />
+    <icon density="ldpi" height="36" src="package-assets/android-icon-36x36.png" width="36" />
+    <icon density="mdpi" height="48" src="package-assets/android-icon-48x48.png" width="48" />
+    <icon density="hdpi" height="72" src="package-assets/android-icon-72x72.png" width="72" />
+    <icon density="xhdpi" height="96" src="package-assets/android-icon-96x96.png" width="96" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
+    <preference name="permissions" value="none" />
+    <preference name="Orientation" value="portrait" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="transparent" />
+    <preference name="StatusBarStyle" value="blacktranslucent" />
+    <preference name="pgb-builder-version" value="1" />
+    <preference name="xwalkMultipleApk" value="false" />
+    <preference name="FadeSplashScreen" value="true" />
+    <preference name="FadeSplashScreenDuration" value="1" />
+    <preference name="SplashScreenDelay" value="2000" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="BackgroundColor" value="#ffffff" />
+    <preference name="target-device" value="universal" />
+    <preference name="fullscreen" value="false" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="prerendered-icon" value="true" />
+    <preference name="stay-in-webview" value="false" />
+    <preference name="detect-data-types" value="true" />
+    <preference name="exit-on-suspend" value="false" />
+    <preference name="auto-hide-splash-screen" value="true" />
+    <preference name="disable-cursor" value="false" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="android-minSdkVersion" value="16" />
+    <preference name="android-targetSdkVersion" value="29" />
+</widget>

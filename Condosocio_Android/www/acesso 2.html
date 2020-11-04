@@ -1,0 +1,169 @@
+<div class="pages">
+  <div data-page="projects" class="page no-toolbar no-navbar">
+    <div class="page-content">
+     
+                      <div class="navbarpages"> 
+                          <div class="navbar_home_link"><a href="menu.html"><img src="images/icons/white/back.png" width="60" alt="" title="" /></a></div>
+                            <div class="nav_right_button">
+             <a href="" class="info_acessos"><img src="images/icons/white/sobre.png" width="24" alt="" title="" /></a>
+        </div>
+                          <div class="navbar_page_center">ACESSOS</div>
+                      </div>
+
+        <div id="pages_maincontent">
+
+            <div class="page_content"> 
+
+                  <div class="buttons-row" >
+                     <a href="#tabela1" class="tab-link active button">Entrada</a>
+                     <a href="#tabela2" class="tab-link  button">Saída</a>
+                   </div>
+
+          
+                  <div class="tabs-animated-wrap">
+                    <div class="tabs">
+                         <div id="tabela1" class="tab active">
+                                  <div class="contactform">
+                 <div id="excluirfav" ></div>
+         
+         <form class="cmxform" name="up" id="formace">
+               
+                                  <label>Favoritos</labeL>
+                <select name="favoritos" id="favoritos" value="" class="loader form_select" >
+                                  
+                                  </select>
+
+            
+                <label>Tipo de Visitante:</label>
+        
+        <select name="tipopessoa" id="tipopessoa" class="form_select" />
+                <option value="Selecione" >Selecione</option>
+                <option value="Convidado">Convidado</option>
+                <option value="Prestador">Prestador</option>
+                 <option value="Appmobil">App Mobilidade</option>
+               
+                               
+        </select>
+        <div style="color:red" id="tipopessoavazia"></div>
+     
+                <label>Nome | Empresa:</label>
+                <input type="text" name="pessoa" placeholder="Entre com o nome ou empresa..." maxlength="25" id="pessoa" value="" class="form_input"/>
+                <div style="color:red" id="pessoavazia"></div>
+                
+
+                 <label>Fone | Whatsaap:</label>
+               <input type="tel" name="cel" id="cel" onkeyup="mascara( this, mtel );" maxlength="15" value="" placeholder="Entre com o celular..." class="form_input" />
+             
+
+              
+              <input type="hidden" name="idfav" id="idfav">
+
+            
+                 <label>Placa:</label>
+                <input type="text" id="placa" name="placa"  maxlength="7" value="" placeholder="Veículo" class="form_input" />
+        
+                <label>Marca:</label>
+         
+                <input  type="text" name="marca"  maxlength="25" id="marca" value="" placeholder="Opcional..." class="form_input" />
+                
+                <label>Tipo Documento:</label>
+        
+        <select name="tipodoc" id="tipodoc" class="form_select" />
+                <option selected disabled value=" ">Selecione</option>
+                <option value="CNH">CNH</option>
+                <option value="RG">RG</option>
+                <option value="CTPS">CTPS</option>
+                <option value="PASSAPORTE">PASSAPORTE</option>  
+                <option value="OUTRO">OUTRO</option>
+                               
+        </select>
+        <div style="color:red" id="tipovazia"></div>
+               
+            <label>Documento:</label>        
+            <input type="text" name="documento" onkeyup="up(this)" maxlength="25" id="documento" value="" placeholder="" class="form_input" />
+            <div style="color:red" id="docvazia"></div>
+
+
+          
+            <!--<input type="reset"  class="form_submit" style="background-color:#394A59" id="reset" value="LIMPAR" />-->
+              
+            <input type="submit" name="submit" class="form_submit" id="submit" value="AUTORIZAR" />
+
+            
+            <a href="acessovis.html" class="acessos_visual form_submit button button-outline"> VISUALIZE ENTRADAS</a>
+
+          </form>
+                </div>
+                        </div>
+                                <div id="tabela2" class="tab">
+                                  
+            <div class="contactform">
+            <form  id="saiaut" name="saiaut" enctype="multipart/form-data">
+
+                                  <label>Tipo</label>
+                                    <select name="tiposai" id="tiposai" class="form_select" />
+                           
+                                    <option value="0">Selecione</option>
+                                    <option value="1">Funcionário(a)</option>
+                                    <option value="2">Prestador de serviço</option>
+                                        
+                                   </select>
+                                    <div style="color:red" id="tipovazia"></div>
+
+
+                                  <label>Nome Completo:</label>                      
+                                  <input type="text" name="nome"  id="nome" value="" placeholder="Entre com nome completo..." maxlength="25" class="form_input" >
+                                  <div style="color:red" id="nomevazia"></div>
+                                  
+                                 <!-- <label>Tipo Documento:</label>
+        
+                                 <select name="tipodoc" id="tipodoc" class="form_select" />
+                                            <option value="Selecione">Selecione</option>
+                                            <option value="CNH">CNH</option>
+                                            <option value="RG">RG</option>
+                                            <option value="CTPS">CTPS</option>
+                                            <option value="PASSAPORTE">PASSAPORTE</option>  
+                                            <option value="OUTRO">OUTRO</option>
+                                                           
+                                    </select>
+                                    <div style="color:red" id="tipodocvazia"></div>
+                                           
+                                        <label>Documento:</label>        
+                                        <input type="text" name="doc" onkeyup="up(this)" maxlength="25" id="doc" value="" placeholder="" class="form_input" />
+                                        <div style="color:red" id="docvazia"></div>-->
+
+                            
+                                  <label>Observações</label>
+                                     
+                                <textarea name="obs" id="obs" class="form_textarea textarea" placeholder="Faça suas observações..." value="" rows="" cols=""></textarea>
+                                  <div style="color:red" id="obscovazia"></div><br>
+                               
+                  <div id="img_small_aut">  
+
+            <a href="" class="button-outline button form_submit" id="img_autsai">ANEXAR IMAGEM</a>
+            
+                  </div>
+
+                 <input type="submit" name="submit" class="form_submit" id="submit" value="AUTORIZAR" />
+                 
+
+                        <a href="aut_saida.html" id="acessos_aut" class=" form_submit button button-outline "> VISUALIZE SAÍDAS</a>
+                  
+
+                        
+          </form>
+
+
+                </div>
+                                 </div>     
+
+
+                    </div>
+                  </div>
+
+            </div>     
+        </div>
+
+  </div>
+ </div>
+</div>

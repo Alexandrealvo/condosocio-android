@@ -1,0 +1,98 @@
+<div id="seguranca"></div>
+<div class="pages">
+  <div data-page="projects" class="page no-toolbar no-navbar">
+
+  
+      
+    <div class="page-content">
+   
+     <div class="navbarpages">
+       
+       <div class="navbar_home_link"><a href="acessovis.html"><img src="images/icons/white/back.png" width="60" alt="" title="" /></a></div>
+    
+       
+         <div class="navbar_page_center">Saída Autorização</div>
+     </div>
+
+
+     <div id="pages_maincontent">
+      
+      
+         <h2 class="page_title">Autorize a saída de pessoa e/ou material.</h2>
+          
+              <div class="page_content"> 
+      
+           
+            <div class="contactform">
+            <form  id="saiaut" name="saiaut" enctype="multipart/form-data">
+
+                                  <label>Tipo</label>
+                                    <select name="tiposai" id="tiposai" class="form_select" />
+                           
+                                    <option value="0">Selecione</option>
+                                    <option value="1">Funcionário(a)</option>
+                                    <option value="2">Prestador de serviço</option>
+                                        
+                                   </select>
+                                    <div style="color:red" id="tipovazia"></div>
+
+
+                                  <label>Nome Completo:</label>                      
+                                  <input type="text" name="nome"  id="nome" value="" class="form_input" >
+                                  <div style="color:red" id="nomevazia"></div>
+                                  
+                                  <label>Tipo Documento:</label>
+        
+                                 <select name="tipodoc" id="tipodoc" class="form_select" />
+                                            <option value="Selecione">Selecione</option>
+                                            <option value="CNH">CNH</option>
+                                            <option value="RG">RG</option>
+                                            <option value="CTPS">CTPS</option>
+                                            <option value="PASSAPORTE">PASSAPORTE</option>  
+                                            <option value="OUTRO">OUTRO</option>
+                                                           
+                                    </select>
+                                    <div style="color:red" id="tipodocvazia"></div>
+                                           
+                                        <label>Documento:</label>        
+                                        <input type="text" name="doc" onkeyup="up(this)" maxlength="25" id="doc" value="" placeholder="" class="form_input" />
+                                        <div style="color:red" id="docvazia"></div>
+
+                            
+                                  <label>Observação</label>
+                                     
+                                <textarea name="obs" id="obs" class="form_textarea textarea" value="" rows="" cols=""></textarea>
+                                  <div style="color:red" id="obscovazia"></div><br>
+                               
+                  <div id="imgsmall">  
+            <label class="buy_now button" id="img_autsai">+ Imagem</label>
+            
+                  </div>
+
+                 <input type="submit" name="submit" class="form_submit" id="submit" value="ENVIAR" />
+                 
+
+                        <input type="reset"  class="form_submit" style="background-color:#394A59" id="reset" value="LIMPAR" />
+                  
+
+                        
+          </form>
+
+
+                </div>
+
+              
+              
+              </div>
+      
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+</html>
